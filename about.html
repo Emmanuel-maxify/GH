@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/dd3dac1439.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/about.css">
+    <title>MaxRice</title>
+</head>
+<body>
+
+    <!-- NAV-BAR STARTED HERE -->
+    <section class="bg-primary nav-bar" id="nav-bar">
+         <ul>
+            <a class="text-white logo" href="">MaxRice</a>
+           
+            <span class="nav-links" id="nav-links">
+                 <li><a href="./home.html">Home</a></li>
+                 <li><a href="./about.html">About</a></li>
+                 <li><a href="./service.html">Service</a></li>
+                 <li><a href="./contact.html">Contact</a></li>
+            </span>
+            <i class="fa-solid fa-xmark" id="menu"></i>
+            <i class="fa-solid fa-bars" id="close"></i>
+        </ul>
+    </section>
+
+    <section class="landing-page bg-dark pt-5">
+        <div class="about-landPage pt-5">
+            <h2>About <span class="MaxRice">MaxRice</span></h2>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto similique assumenda officiis, quasi beatae veniam nostrum, soluta rerum eum, suscipit laudantium distinctio exercitationem nesciunt dolores iusto. Nam, in eveniet!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius praesentium cumque cupiditate! Odio voluptates dolore neque perferendis. Nihil eveniet repudiandae corrupti adipisci, iste tempore. Non maiores earum delectus sunt optio?
+            </p>
+        </div>
+    </section>
+
+    <section class="core-values">
+        <div class="container values pt-5">
+            <h2>Our Values</h2>
+            <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius voluptas dicta vel aspernatur sequi atque porro, autem quibusdam amet et? Vitae, aspernatur sed magni eligendi unde omnis voluptatibus quae culpa.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae illo eos earum accusamus ducimus neque perspiciatis doloremque, voluptas temporibus repellat officiis omnis exercitationem aspernatur, ad incidunt? Minus autem cumque officiis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae dolores impedit non eaque. Ad quisquam id, cupiditate eum nemo asperiores quis repellat iusto non sit assumenda iste libero similique ducimus.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="values-display">
+                        <img src="./img/landing-page.jpg" alt="" width="70%"  height="300px">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="values-display">
+                        <img src="./img/456840.jpg" alt="" width="70%" height="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="the-team container-fluid bg-dark pt-5">
+        <div class="team">
+            <h2>Meet The Team</h2>
+            <div class="row">
+                <div class="col-md-4 pt-3">
+                    <div class="team-display">
+                        <img src="./img/1735.ef927537b914c7918215803e42d58bee.jpg" width="100%" height="70%" alt="">
+                        <h4>Emmanuel Max</h4>
+                        <p>Founder</p>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <div class="team-display">
+                        <img src="./img/adult-beanie-dark-395085.jpg" width="100%" height="70%" alt="">
+                        <h4>Roddy Rich</h4>
+                        <p>Marketer</p>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <div class="team-display">
+                        <img src="./img/adult-angry-businessman-428364.jpg" width="100%" height="70%" alt="">
+                        <h4>Roman Abramovich</h4>
+                        <p>Finance Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="social-links pt-5">
+            <div class="social-links">
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-whatsapp-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <h6>Copyright Trusted Services</h6>	
+            </div>
+    </section>
+
+    <script>
+   
+        document.getElementById("close").onclick = function(){
+            document.getElementById('nav-links').style.display = "block";
+            document.getElementById("close").style.display = "none";
+            document.getElementById("menu").style.display = "block"; 
+        }
+        document.getElementById("menu").onclick = function(){
+            document.getElementById('nav-links').style.display = "none";
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("close").style.display = "block"; 
+        }
+    
+    </script>
+
+</body>
+</html>

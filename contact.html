@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/dd3dac1439.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <title>MaxRice</title>
+</head>
+<body>
+
+    <!-- NAV-BAR STARTED HERE -->
+    <section class="bg-primary nav-bar" id="nav-bar">
+         <ul>
+            <a class="text-white logo" href="">MaxRice</a>
+           
+            <span class="nav-links" id="nav-links">
+                 <li><a href="./home.html">Home</a></li>
+                 <li><a href="./about.html">About</a></li>
+                 <li><a href="./service.html">Service</a></li>
+                 <li><a href="./contact.html">Contact</a></li>
+            </span>
+            <i class="fa-solid fa-xmark" id="menu"></i>
+            <i class="fa-solid fa-bars" id="close"></i>
+        </ul>
+    </section>
+
+    <section class="contact bg-dark pt-5">
+        <div class="contact-us pt-5">
+            <h2>Contact Us</h2>
+            <br />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe architecto similique assumenda officiis, quasi beatae veniam nostrum, soluta rerum eum, suscipit laudantium distinctio exercitationem nesciunt dolores iusto. Nam, in eveniet!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius praesentium cumque cupiditate! Odio voluptates dolore neque perferendis. Nihil eveniet repudiandae corrupti adipisci, iste tempore. Non maiores earum delectus sunt optio?
+            </p>
+        </div>
+    </section>
+
+    <section class="comment pt-5">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <div class="row">
+                <div class="col-md-6 pt-3">
+                    <h4>Comment Section</h4>
+                    <form class="form pt-3">
+                        <p>
+                        <input class="form-control" type="text" name="username" placeholder="Username?"></p>
+                        <p><br>
+                        <textarea class="form-control" name="comments" id="comments" placeholder="Comment here!"></textarea></p>
+                        <center>
+                        <button class="btn btn-block submit">Submit</button>
+                        </center>
+                    </form>
+                </div>
+                <div class="col-md-6 pt-3">
+                    <h4>We Are Here For You</h4>
+                    <div class="comment-hours pt-4">
+                        <h5>Opening Hours</h5>
+                        <p>Monday to friday - 9am to 9pm<br>
+                        Saturday to Sunday - 9am to 11pm</p>
+                    </div>
+                    <div class="comment-locate pt-3">
+                        <h5>Get In Touch</h5>
+                        <p>#30 abc Colony, xyz City IN<br>
+                        Example@website.com<br>
+                        +234 676578676</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer bg-dark">
+        <div class="social-links pt-5">
+            <div class="social-links">
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-whatsapp-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <h6>Copyright Trusted Services</h6>	
+            </div>
+    </section>
+
+    
+    <script>
+   
+        document.getElementById("close").onclick = function(){
+            document.getElementById('nav-links').style.display = "block";
+            document.getElementById("close").style.display = "none";
+            document.getElementById("menu").style.display = "block"; 
+        }
+        document.getElementById("menu").onclick = function(){
+            document.getElementById('nav-links').style.display = "none";
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("close").style.display = "block"; 
+        }
+    
+    </script>
+    
+</body>
+</html>

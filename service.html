@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/dd3dac1439.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/service.css">
+    <title>MaxRice</title>
+</head>
+<body>
+
+    <!-- NAV-BAR STARTED HERE -->
+    <section class="bg-primary nav-bar" id="nav-bar">
+         <ul>
+            <a class="text-white logo" href="">MaxRice</a>
+           
+            <span class="nav-links" id="nav-links">
+                 <li><a href="./home.html">Home</a></li>
+                 <li><a href="./about.html">About</a></li>
+                 <li><a href="./service.html">Service</a></li>
+                 <li><a href="./contact.html">Contact</a></li>
+            </span>
+            <i class="fa-solid fa-xmark" id="menu"></i>
+            <i class="fa-solid fa-bars" id="close"></i>
+        </ul>
+    </section>
+
+        <section class="our-products bg-dark pt-5">
+        <div class="container products pt-4">
+            <h2>Our Products</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis alias culpa quasi corrupti nisi debitis repellat ipsam nobis doloremque natus est ea id officiis aliquam, eaque suscipit veniam dolores praesentium.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, molestias, dolore modi sed repellendus reprehenderit libero pariatur corrupti, vitae tenetur omnis enim. Cumque molestiae, placeat iure labore debitis quas! Itaque?
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-display">
+                        <img src="./img/riceFarm.jfif" width="100%" alt="">
+                        <p>Fresh for the finest Farms you could get</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-display">
+                        <img src="./img/manyRice.jfif" width="100%" alt="">
+                        <p>We got different varity of rice products</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-display">
+                        <img src="./img/cookedRice.jfif" width="100%" alt="">
+                        <p>Enjoy the most delicious rice product you could have</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="order">
+        <div class="order-now">
+            <h2>Start Ordering</h2>
+        </div>
+    </section>
+
+    <!-- <section class="footer bg-dark">
+        <div class="social-links pt-5">
+            <div class="social-links">
+                <i class="fa-brands fa-twitter-square"></i>
+                <i class="fa-brands fa-facebook-square"></i>
+                <i class="fa-brands fa-whatsapp-square"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <h6>Copyright Trusted Services</h6>	
+            </div>
+    </section> -->
+
+
+    <script>
+   
+        document.getElementById("close").onclick = function(){
+            document.getElementById('nav-links').style.display = "block";
+            document.getElementById("close").style.display = "none";
+            document.getElementById("menu").style.display = "block"; 
+        }
+        document.getElementById("menu").onclick = function(){
+            document.getElementById('nav-links').style.display = "none";
+            document.getElementById("menu").style.display = "none";
+            document.getElementById("close").style.display = "block"; 
+        }
+    
+    </script>
+    
+</body>
+</html>

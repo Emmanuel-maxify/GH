@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 132, 255);
+}
+
+    /* NAV BAR STARTED HERE */
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.fa-xmark{
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+}
+.fa-bars{
+    position: absolute;
+    font-size: 25px;
+    right: 20px;
+    top: 10px;
+    display: none;
+    cursor: pointer;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+li a{
+    color: rgb(36, 36, 36);
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.7s;
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    padding: 15px;
+    cursor: pointer;
+}
+.nav-links{
+    margin-left: 25%;
+}
+
+li a:hover{
+    background-color: rgb(36, 36, 36);
+    color: rgb(0, 132, 255);
+}
+li a:active{
+    background-color: #fff;
+}
+
+@media screen and (max-width: 847px){
+    .logo{
+        font-size: 25px;
+    }
+    .nav-links{
+        width: 100%;
+        display: none;
+        margin-left: 0;
+        transition: 0.3s all ease-in;
+    }
+    .fa-bars{
+        display: block;
+    }
+   .nav-links li{
+       display: block;
+       width: 100%;
+       text-align: center;
+   }
+   .nav-links a{
+       padding: 11px; 
+   }
+   li a:hover{
+    color: #fff;
+    background-color: none;
+}
+  
+}
+    /* NAV BAR ENDS HERE */
+
+
+    /* LANDING-PAGE STARTED HERE */
+.wContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.MaxRice{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 52px;
+    color: rgb(0, 132, 255);
+    font-style: italic;
+}
+.below-MaxRice{
+    font-size: 28px;
+    margin-top: -15px;
+}
+.landing-page{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+@media screen and (max-width: 847px){
+    .MaxRice{
+        font-size: 40px;
+    }
+    .wContent h1{
+        font-size: 30px;
+    }
+    .below-MaxRice{
+        font-size: 17px;
+    }
+    .landing-page{
+        height: 120vh;
+    }
+}
+@media screen and (max-width: 447px){
+    .MaxRice{
+        font-size: 30px;
+    }
+    .wContent h1{
+        font-size: 20px;
+    }
+    .below-MaxRice{
+        font-size: 12px;
+    }
+}
+    /* LANDING-PAGE ENDS HERE */
+
+
+    /* FEATURES STARTED HERE */
+img{
+    border-radius: 20px;
+}
+.features{
+    height: auto;
+}
+
+.features h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 38px;
+}
+.features p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 747px){
+    .features h2{
+        font-size: 35px;
+    }
+    .features p{
+        font-size: 15px;
+        font-weight: 450;
+    }
+}
+    /* FEATURES ENDS HERE */
+
+
+    /* STOCK STARTED HERE */
+.stock{
+    margin-top: 20px;
+    height: auto;
+}
+.stock h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-size: 38px;
+}
+.stock-grains{
+    position: relative;
+}
+ .overlay{
+   position: absolute;
+   width: 90%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   background:  linear-gradient(rgba(255, 255, 255, 0.5),rgb(0, 132, 255,0.5));
+   border-radius: 19px;
+   opacity: 0;
+   transition: 1s;
+}
+.stock-grains:hover .overlay{
+  opacity: 1;
+}
+.stock-desc{
+	width: 80%;
+	position: absolute;
+    bottom: 0;
+    top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: 1s;
+}
+hr{
+	background: rgb(31, 28, 28);
+	height: 5px;
+	border: 0;
+	margin: 15px auto;
+	width: 70%;
+}
+.stock-desc h3{
+    text-align: center;
+}
+.stock-desc p{
+	font-size: 12px;
+}
+.stock-grains:hover .stock-desc{
+    opacity: 1;
+    bottom: 30%;
+}
+.order-now{
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 747px){
+    .stock h2{
+        font-size: 35px;
+    }
+}
+    /* STOCK ENDS HERE */
+
+
+    /* REVIEWS STARTED HERE */
+.review{
+    height: auto;
+}
+.review-bg{
+    width: 90%;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px 1px rgb(31, 28, 28);
+    margin-bottom: 50px;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+.review-bg:hover{
+    transform: translateY(-10px);
+}
+.review h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 38px;
+}
+.review-desc h5{
+    text-align: center;
+    margin-top: -40px;
+}
+.review-desc p{
+    text-align: center;
+    margin-top: 10%;
+}
+.review-desc img{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 747px){
+    .review h2{
+        font-size: 30px;
+    }
+    .review-bg{
+        width: 80%;
+        height: 200px;
+    }
+    .review-desc p{
+        margin-top: 7%;
+        font-size: 15px;
+    }
+}
+    /* REVIEW ENDS HERE */
+
+
+    /* GET-STARTED STARTS HERE */
+.Get-Started h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-size: 38px;
+}
+.Get-Started h4{
+    color: rgb(0, 132, 255);
+    text-align: center;
+    font-size: 28px;
+}
+.Get-Started iframe{
+    border-radius: 20px;
+}
+.Get-Started p{
+    color: rgb(0, 132, 255);
+    text-align: center;
+    margin-top: -10px;
+}
+.form{
+    margin-top: 15%;
+}
+.sign-in{
+    width: 50%;
+    margin-bottom: 30px;
+}
+    /* GET-STARTED ENDS HERE */
+
+
+    /* CONTACT STARTED HERE */
+.contact h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 38px;
+}
+.contact-left, .contact-right{
+    text-align: center;
+}
+.contact hr{
+	height: 2px;
+	width: 90%;
+	background: rgb(31, 28, 28);
+}
+    /* CONTACT ENDS HERE */
+
+
+    /* FOOTER STARTED HERE */
+
+.footer{
+    color: rgb(0, 132, 255);
+}
+.social-links{
+    text-align: center;
+}
+.fa-twitter-square, .fa-facebook-square, .fa-whatsapp-square, .fa-instagram-square{
+    font-size: 30px;
+    margin: 40px 5px 0;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fa-twitter-square:hover, .fa-facebook-square:hover, .fa-whatsapp-square:hover, .fa-instagram-square:hover{
+    transform: translateY(-7px)
+}
+    /* FOOTER ENDS HERE */
